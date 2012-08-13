@@ -61,3 +61,6 @@ Then /I should (not )?see the following movies:\s*(\S.*)/ do |not_see, movie_lis
   end
 end
 
+Then /the director of "(.*)" should be "(.*)"/i do |title, director|
+  assert_equal(Movie.find_by_title(title).director, director)
+end
