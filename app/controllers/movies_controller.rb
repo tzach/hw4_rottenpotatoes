@@ -58,4 +58,8 @@ class MoviesController < ApplicationController
     redirect_to movies_path
   end
 
+  def search_by_director
+    @movies = Movie.search_by_director(params[:id])
+#    debugger
+  end
 end
