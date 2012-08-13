@@ -59,7 +59,7 @@ class MoviesController < ApplicationController
   end
 
   def search_by_director
-    @movies = Movie.search_by_director(params[:id])
+#    @movies = Movie.search_by_director(params[:id])
 #    debugger
   end
 end
